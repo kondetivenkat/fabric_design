@@ -1,0 +1,70 @@
+body{
+  background-color: antiquewhite;
+  margin: 0;
+}
+
+.app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.app-container h1{
+  color:rgb(138, 127, 255);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.upload-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.upload-item {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.upload-item h2{
+  color: green;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.dropzone {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.uploaded-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px 10px;
+}
+
+.image-container {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.image-container h2{
+  color: rgb(240, 109, 236);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+canvas {
+  border: 1px solid #ccc;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .upload-item, .image-container {
+    width: 90%;
+  }
+}
